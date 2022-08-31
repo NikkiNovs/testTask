@@ -16,10 +16,8 @@ export class InfoUserComponent {
     public data$: Observable<IInfo[]>;
 
     constructor (public store: Store) {
-
         this.store.dispatch(getDataPending());
         this.data$ = this.store.select(getDataUser);
-
     }
 
 }
