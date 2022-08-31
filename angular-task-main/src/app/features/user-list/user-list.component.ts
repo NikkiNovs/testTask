@@ -16,10 +16,8 @@ export class UserListComponent {
     public user$: Observable<UserList[]>;
 
     constructor (public store: Store) {
-
         this.store.dispatch(GetUserInfoPending());
         this.user$ = this.store.select(getUserInfo);
-
     }
 
 }
