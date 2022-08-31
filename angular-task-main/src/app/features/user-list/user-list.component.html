@@ -1,0 +1,12 @@
+<div class="content">
+    <div class="link" routerLink="/">
+        Back
+    </div>
+    <div *ngIf="(user$|async) as user" class="userName">
+        <div *ngFor="let us of user" [routerLink]="['/profiles/', us.id]" class="userLink">
+            <a class="userBut"> {{us.firstName}} {{us.lastName}}</a>
+        </div>
+    </div>
+</div>
+
+

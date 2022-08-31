@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="header">
+        <crx-header pageTitle="Profile Details"></crx-header>
+    </div>
+
+    <div class="profileCards">
+        <div *ngFor="let data of data$|async" class="profile">
+
+            <div class="profileInfo">
+                <div class="userProfile">
+                    <h2>{{data.firstName}} {{data.lastName}}</h2>
+                    <p>First Name Last Name</p>
+                </div>
+                <div class="userData">
+                    <div>Phone: {{data.phoneNumber}}</div>
+                    <div>Cell: {{data.cellNumber}}</div>
+                    <div>City: {{data.city}}</div>
+                    <div>Email: {{data.email}}</div>
+                    <div>Date of Birth: {{data.dateOfBirth}}</div>
+                </div>
+            </div>
+            <div class="profileImg">
+                <img alt="photo User" class="photoUser" src="{{data.picture}}">
+            </div>
+        </div>
+        <div class="link" routerLink="/list">
+            Back
+        </div>
+    </div>
+</div>
+
+<!--<div *ngFor="let data of data$|async">-->
+<!--    <h2></h2>-->
+<!--    <p>{{data.cellNumber}}</p>-->
+<!--    <p>{{data.city}}</p>-->
+<!--    <p>{{data.dateOfBirth}}</p>-->
+<!--    <p>{{data.email}}</p>-->
+<!--    <p>{{data.firstName}}</p>-->
+<!--    <p>{{data.lastName}}</p>-->
+<!--    <p>{{data.phoneNumber}}</p>-->
+<!--    <p>{{data.picture}}</p>-->
+<!--    <p>{{data.state}}</p>-->
+<!--</div>-->

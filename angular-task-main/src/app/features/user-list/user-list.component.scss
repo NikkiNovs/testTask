@@ -1,0 +1,35 @@
+.content {
+    margin: 20px;
+}
+
+.link {
+    cursor: pointer;
+    border: 1px solid black;
+    width: 50px;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.link:active {
+    margin-right: 2px;
+    margin-top: 2px;
+    border: 2px solid green;
+
+}
+
+.userName {
+    margin: 100px;
+}
+
+.userLink {
+    padding: 10px;
+    border: 1px solid black;
+    width: 200px;
+    height: 15px;
+    cursor: pointer;
+}
+
+.userBut {
+    cursor: pointer;
+}
